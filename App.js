@@ -14,9 +14,13 @@ const List = () => {
     getCoutries();
     console.log("countries", countries);
   }, [])
+  
 
   return (
-    <View>
+    <View style = {{flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+      }}>
       <Text>List of Countries</Text>
       <FlatList
         data={countries}
@@ -30,9 +34,10 @@ const List = () => {
           )
         }
       />
-
     </View>
+    
   )
+
 }
 export default List;
 
