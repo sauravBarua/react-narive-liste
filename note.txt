@@ -1,0 +1,6 @@
+ <FileList 
+      data = {getCoutries()}
+      renderItem={(e)=>{
+        return <Text> {e.name} </Text>
+      }}
+      />
